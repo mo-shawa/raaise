@@ -4,9 +4,9 @@ function SuccessStory() {
 	return (
 		<section
 			id="success-story"
-			className="w-full max-w-7xl py-12 md:py-16 bg-slate-50 -mt-[4rem] rounded"
+			className="w-full max-w-7xl py-12 md:py-16 bg-slate-50 md:-mt-[4rem] rounded"
 		>
-			<div className="container px-4 md:px-6">
+			<div className=" px-4 md:px-6">
 				<h2 className="text-3xl font-bold tracking-tighter text-center mb-12">
 					From Struggles to Success: The Raaise Way
 				</h2>
@@ -33,7 +33,7 @@ function SuccessStory() {
 						<p className="text-zinc-600 dark:text-gray-400">
 							The result? A 100% increase in market reach and 50% improvement in
 							cash flow within 12 months. Today, that same company stands as a
-							sustainable business, a testament to the power of Raaise's
+							sustainable business, a testament to the power of Raaise&apos;s
 							hands-on approach.
 						</p>
 					</div>

@@ -16,17 +16,17 @@ function Sphere() {
 function Hero() {
 	return (
 		<section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 max-w-7xl">
-			<div className="container px-4 md:px-6">
+			<div className=" px-4 md:px-6">
 				<div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
 					<div className="md:col-span-2">
-						<h1 className="text-3xl font-black tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl mb-4 text-zinc-800">
+						<h1 className="text-3xl text-center md:text-left font-black tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl mb-4 text-zinc-800">
 							Unleashing Potential,
 							<br />
 							Transforming Futures
 						</h1>
 						<p className="max-w-[700px] text-zinc-600 md:text-xl dark:text-gray-400 mb-6">
 							Welcome to Raaise, where bold ideas meet transformative execution.
-							We don't just build businesses—we shape them into scalable,
+							We don&apos;t just build businesses—we shape them into scalable,
 							tech-enabled powerhouses.
 						</p>
 					</div>
