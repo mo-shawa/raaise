@@ -6,8 +6,8 @@ function SuccessStory() {
 			id="success-story"
 			className="w-full max-w-7xl py-12 md:py-16 bg-slate-50 md:-mt-[4rem] rounded"
 		>
-			<div className=" px-4 md:px-6">
-				<h2 className="text-3xl font-bold tracking-tighter text-center mb-12">
+			<div className="container px-4 md:px-6">
+				<h2 className="text-3xl font-semibold tracking-tighter text-center mb-12">
 					From Struggles to Success: The Raaise Way
 				</h2>
 				<div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
@@ -25,7 +25,7 @@ function SuccessStory() {
 							operations could no longer keep up with evolving market demands.
 							Where others saw a lost cause, we saw opportunity.
 						</p>
-						<p className="text-zinc-600 dark:text-gray-400">
+						<p className="text-gray-600 dark:text-gray-400">
 							We overhauled its core operations, rebuilt partnerships,
 							leveraging technology to digitize the supply chain, optimize
 							inventory management, and expand its digital presence.
