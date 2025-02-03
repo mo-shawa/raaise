@@ -1,3 +1,4 @@
+import { b } from 'motion/react-client'
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
@@ -9,9 +10,20 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			fontFamily: {
+				sans: 'var(--font-geist-sans)',
+				mono: 'var(--font-geist-mono)',
+			},
 			colors: {
 				background: 'var(--background)',
 				foreground: 'var(--foreground)',
+				brand: {
+					primary: '#B0D612',
+					light: '#ECFCCB',
+				},
+				black: '#000104',
+				lightGray: '#7f7f7f',
+				darkGray: '#6B7280',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
