@@ -4,12 +4,12 @@ function SuccessStory() {
 	return (
 		<section
 			id="success-story"
-			className="w-full max-w-7xl py-12 md:py-16 bg-slate-50 md:-mt-[4rem] rounded"
+			className="w-full max-w-7xl py-8 bg-brand-light md:-mt-[4rem] rounded"
 		>
-			<div className="container px-4 md:px-6">
-				<h2 className="text-3xl font-semibold tracking-tighter text-center mb-12">
+			<div className=" px-4 md:px-6">
+				<h1 className="text-3xl font-semibold tracking-tight  mb-12">
 					From Struggles to Success: The Raaise Way
-				</h2>
+				</h1>
 				<div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
 					<Image
 						alt="Success story illustration"

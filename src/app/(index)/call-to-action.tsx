@@ -1,5 +1,4 @@
-import { Button } from '@/components/ui/button'
-import { ArrowRight } from 'lucide-react'
+import Image from 'next/image'
 import ApplyButton from './apply-button'
 
 function CallToAction() {
@@ -10,14 +9,16 @@ function CallToAction() {
 					<div className="space-y-4">
 						<h2 className="text-3xl font-semibold tracking-tighter sm:text-4xl md:text-6xl text-white ">
 							Take the{' '}
-							<span className="bg-brand-primary px-3 rounded text-lime-900">
+							<span className="bg-brand-primary px-3 rounded text-black">
 								Leap
 							</span>{' '}
 							with{' '}
-							<img
+							<Image
 								src="/logo/colored-white.png"
 								alt="Raaise Logo"
 								className="inline-block h-10 -mt-1 w-auto"
+								width={256}
+								height={128}
 							/>
 						</h2>
 						<p className="mx-auto max-w-[700px] md:text-xl">

@@ -1,15 +1,18 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 function Navbar() {
 	return (
-		<header className="sticky top-0 z-50 bg-white/50 shadow-sm backdrop-blur-sm w-full">
+		<header className="sticky top-0 z-50 bg-white/50 shadow-sm backdrop-blur w-full">
 			<div className="px-4 lg:px-6 py-4 flex items-center mx-auto w-full max-w-7xl">
 				<Link className="flex items-center justify-center h-full" href="#">
 					<span className="sr-only">Raaise</span>
-					<img
+					<Image
 						className="aspect-auto w-32"
 						src="/logo/logo-colored.png"
 						alt="Raaise"
+						width={128}
+						height={32}
 					/>
 				</Link>
 				<nav className="ml-auto flex gap-4 sm:gap-6">

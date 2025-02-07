@@ -1,5 +1,4 @@
 'use client'
-import { Button } from '@/components/ui/button'
 import { Float, OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import ApplyButton from './apply-button'

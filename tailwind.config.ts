@@ -9,6 +9,16 @@ const config: Config = {
 		'./src/app/**/*.{js,ts,jsx,tsx,mdx}',
 	],
 	theme: {
+		colors: {
+			brand: {
+				primary: '#B0D612',
+				light: '#ECFCCB',
+			},
+			black: '#000104',
+			white: '#ffffff',
+			lightGray: '#b2b2b2',
+			darkGray: '#7f7f7f',
+		},
 		extend: {
 			fontFamily: {
 				sans: 'var(--font-geist-sans)',
@@ -17,13 +27,6 @@ const config: Config = {
 			colors: {
 				background: 'var(--background)',
 				foreground: 'var(--foreground)',
-				brand: {
-					primary: '#B0D612',
-					light: '#ECFCCB',
-				},
-				black: '#000104',
-				lightGray: '#7f7f7f',
-				darkGray: '#6B7280',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

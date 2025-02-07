@@ -1,4 +1,42 @@
 import { Card, CardContent } from '@/components/ui/card'
+import { ArrowUpCircle, BarChart3, Building2 } from 'lucide-react'
+
+interface FeatureCard {
+	title: string
+	description: string
+	topIcon: React.ReactNode
+	hoverIcon?: React.ReactNode
+}
+
+const featureCards: FeatureCard[] = [
+	{
+		title: 'Expert Guidance',
+		description:
+			'From technology upgrades to digital scaling, our team works side by side with you to ensure success.',
+		topIcon: (
+			<Building2 className="w-6 h-6 text-brand-primary mt-1 flex-shrink-0 group-hover:opacity-0 transition-opacity relative z-10" />
+		),
+		hoverIcon: (
+			<Building2 className="h-full w-auto absolute top-0 right-0 translate-x-[100%] group-hover:translate-x-0 transition-transform z-0 ease-in-out text-white opacity-0 group-hover:opacity-100" />
+		),
+	},
+	{
+		title: 'Shared Success',
+		description:
+			'We win when you win. Our partnership models are designed for mutual growth.',
+		topIcon: (
+			<ArrowUpCircle className="w-6 h-6 text-brand-primary mt-1 flex-shrink-0" />
+		),
+	},
+	{
+		title: 'Proven Impact',
+		description:
+			"We don't promise results—we deliver them. Our track record speaks for itself.",
+		topIcon: (
+			<BarChart3 className="w-6 h-6 text-brand-primary mt-1 flex-shrink-0" />
+		),
+	},
+]
 
 function WhyRaaise() {
 	return (
@@ -16,33 +54,21 @@ function WhyRaaise() {
 					apart:
 				</p>
 				<div className="grid gap-6 md:grid-cols-3 md:gap-8">
-					<Card>
-						<CardContent className="p-6 flex flex-col space-y-2">
-							<h3 className="text-xl font-semibold">Expert Guidance</h3>
-							<p className="text-zinc-600 dark:text-gray-400">
-								From technology upgrades to digital scaling, our team works side
-								by side with you to ensure success.
-							</p>
-						</CardContent>
-					</Card>
-					<Card>
-						<CardContent className="p-6 flex flex-col space-y-2 hover:bg-lime-100">
-							<h3 className="text-xl font-semibold">Shared Success</h3>
-							<p className="text-zinc-600 dark:text-gray-400">
-								We win when you win. Our partnership models are designed for
-								mutual growth.
-							</p>
-						</CardContent>
-					</Card>
-					<Card>
-						<CardContent className="p-6 flex flex-col space-y-2">
-							<h3 className="text-xl font-semibold">Proven Impact</h3>
-							<p className="text-zinc-600 dark:text-gray-400">
-								We don&apos;t promise results—we deliver them. Our track record
-								speaks for itself.
-							</p>
-						</CardContent>
-					</Card>
+					{featureCards.map((card, index) => (
+						<Card
+							key={index}
+							className="hover:bg-brand-light transition-colors group relative bg-white overflow-hidden"
+						>
+							{card.hoverIcon}
+							<CardContent className="p-6 flex flex-col space-y-2 relative z-10">
+								{card.topIcon}
+								<h3 className="text-xl font-semibold">{card.title}</h3>
+								<p className="text-zinc-600 dark:text-gray-400 ">
+									{card.description}
+								</p>
+							</CardContent>
+						</Card>
+					))}
 				</div>
 			</div>
 		</section>
